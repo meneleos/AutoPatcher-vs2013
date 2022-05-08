@@ -20,7 +20,7 @@ gtest </br>
 Reducio </br>
 
 
--- build --
-*zlib-1.2.3\projects\visualc6\zlib.sln (vs2013 -- "LIB Release")
-*wxWidgets-2.8.10\build\msw\wx.sln (vs2013 -- "Release")
-*tinyxml (vs2013 -- "Release|Debug")
+-- build -- </br>
+*zlib-1.2.3\projects\visualc6\zlib.sln (vs2013 -- "LIB Release") </br>
+*wxWidgets-2.8.10\build\msw\wx.sln (vs2013 -- "Release") </br>
+*tinyxml (vs2013 -- "Release|Debug") </br>
