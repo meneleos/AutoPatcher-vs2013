@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\web_connection_base.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\alert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\alert_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\announce_entry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\assert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\bandwidth_limit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\bandwidth_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\bandwidth_queue_entry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\bdecode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\bitfield.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\block_cache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\bloom_filter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\chained_buffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\choker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\close_reason.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\cpuid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\crc32c.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\create_torrent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\disk_buffer_holder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\entry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\error_code.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\file_storage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\file_progress.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\lazy_bdecode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\escape_string.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\string_util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\file.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\fingerprint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\gzip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\hasher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\hex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\http_connection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\http_stream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\http_parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\i2p_stream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\identify_client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\ip_filter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\ip_voter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\performance_counters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\peer_class.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\peer_class_set.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\peer_connection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\bt_peer_connection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\web_peer_connection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\http_seed_connection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\peer_connection_handle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\instantiate_connection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\merkle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\natpmp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\part_file.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\packet_buffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\piece_picker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\platform_util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\proxy_base.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\peer_list.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\puff.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\random.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\receive_buffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\request_blocks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\resolve_links.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\resolver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\rss.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\session.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\session_call.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\session_handle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\session_impl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\session_settings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\proxy_settings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\session_stats.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\settings_pack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\socket_io.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\socket_type.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\socks5_stream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\stat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\stat_cache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\storage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\time.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\timestamp_history.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\torrent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\torrent_handle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\torrent_info.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\torrent_peer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\torrent_peer_allocator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\torrent_status.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\tracker_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\http_tracker_connection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\utf8.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\udp_tracker_connection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\udp_socket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\upnp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\utp_socket_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\utp_stream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\file_pool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\lsd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\disk_io_job.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\disk_job_pool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\disk_buffer_pool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\disk_io_thread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\enum_net.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\broadcast_socket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\magnet_uri.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\parse_url.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\ConvertUTF.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\thread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\xml_parse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\version.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\metadata_transfer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\ut_pex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\ut_metadata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\smart_ban.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\lt_trackers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\dht_storage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\dos_blocker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\dht_tracker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\msg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\node.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\node_entry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\refresh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\rpc_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\find_data.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\put_data.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\node_id.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\routing_table.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\traversal_algorithm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\item.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\get_peers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\get_item.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\ed25519\src\add_scalar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\ed25519\src\fe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\ed25519\src\ge.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\ed25519\src\key_exchange.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\ed25519\src\keypair.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\ed25519\src\sc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\ed25519\src\seed.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\ed25519\src\sha512.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\ed25519\src\sign.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\ed25519\src\verify.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\sha1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4D008782-A082-3F3C-988F-496080558A5C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

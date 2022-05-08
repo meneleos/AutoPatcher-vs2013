@@ -1,0 +1,180 @@
+﻿  cipher.cpp
+c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\algparam.h(137): warning C4512: 'CryptoPP::CombinedNameValuePairs' : assignment operator could not be generated
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\algparam.h(124) : see declaration of 'CryptoPP::CombinedNameValuePairs'
+c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\queue.h(108): warning C4512: 'CryptoPP::ByteQueue::Walker' : assignment operator could not be generated
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\queue.h(76) : see declaration of 'CryptoPP::ByteQueue::Walker'
+c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\queue.h(137): warning C4512: 'CryptoPP::LazyPutter' : assignment operator could not be generated
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\queue.h(127) : see declaration of 'CryptoPP::LazyPutter'
+c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\queue.h(145): warning C4512: 'CryptoPP::LazyPutterModifiable' : assignment operator could not be generated
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\queue.h(140) : see declaration of 'CryptoPP::LazyPutterModifiable'
+c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\filters.h(972): warning C4512: 'CryptoPP::OutputProxy' : assignment operator could not be generated
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\filters.h(928) : see declaration of 'CryptoPP::OutputProxy'
+c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\asn.h(284): warning C4512: 'CryptoPP::BERGeneralDecoder' : assignment operator could not be generated
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\asn.h(254) : see declaration of 'CryptoPP::BERGeneralDecoder'
+c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\asn.h(302): warning C4512: 'CryptoPP::DERGeneralEncoder' : assignment operator could not be generated
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\asn.h(287) : see declaration of 'CryptoPP::DERGeneralEncoder'
+c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\asn.h(312): warning C4512: 'CryptoPP::BERSequenceDecoder' : assignment operator could not be generated
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\asn.h(305) : see declaration of 'CryptoPP::BERSequenceDecoder'
+c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\asn.h(322): warning C4512: 'CryptoPP::DERSequenceEncoder' : assignment operator could not be generated
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\asn.h(315) : see declaration of 'CryptoPP::DERSequenceEncoder'
+c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\asn.h(332): warning C4512: 'CryptoPP::BERSetDecoder' : assignment operator could not be generated
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\asn.h(325) : see declaration of 'CryptoPP::BERSetDecoder'
+c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\asn.h(342): warning C4512: 'CryptoPP::DERSetEncoder' : assignment operator could not be generated
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\asn.h(335) : see declaration of 'CryptoPP::DERSetEncoder'
+C:\GamePackages\Client\Tools\Patcher2017\extern\include\cryptopp/dh2.h(66): warning C4512: 'CryptoPP::DH2' : assignment operator could not be generated
+          C:\GamePackages\Client\Tools\Patcher2017\extern\include\cryptopp/dh2.h(20) : see declaration of 'CryptoPP::DH2'
+cipher.cpp(134): warning C4512: 'DH2KeyAgreement' : assignment operator could not be generated
+          cipher.cpp(121) : see declaration of 'DH2KeyAgreement'
+cipher.cpp(380): warning C4189: 'count' : local variable is initialized but not referenced
+cipher.cpp(446): warning C4193: #pragma warning(pop) : no matching '#pragma warning(push)'
+c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\algparam.h(272): warning C4512: 'CryptoPP::AssignFromHelperClass<CryptoPP::DL_GroupParameters_IntegerBasedImpl<CryptoPP::ModExpPrecomputation,CryptoPP::DL_FixedBasePrecomputationImpl<CryptoPP::Integer>>,CryptoPP::DL_GroupParameters_IntegerBased>' : assignment operator could not be generated
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\gfpcrypt.h(133) : see reference to class template instantiation 'CryptoPP::AssignFromHelperClass<CryptoPP::DL_GroupParameters_IntegerBasedImpl<CryptoPP::ModExpPrecomputation,CryptoPP::DL_FixedBasePrecomputationImpl<CryptoPP::Integer>>,CryptoPP::DL_GroupParameters_IntegerBased>' being compiled
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\gfpcrypt.h(133) : while compiling class template member function 'void CryptoPP::DL_GroupParameters_IntegerBasedImpl<CryptoPP::ModExpPrecomputation,CryptoPP::DL_FixedBasePrecomputationImpl<CryptoPP::Integer>>::AssignFrom(const CryptoPP::NameValuePairs &)'
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\gfpcrypt.h(153) : see reference to class template instantiation 'CryptoPP::DL_GroupParameters_IntegerBasedImpl<CryptoPP::ModExpPrecomputation,CryptoPP::DL_FixedBasePrecomputationImpl<CryptoPP::Integer>>' being compiled
+c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\algparam.h(272): warning C4512: 'CryptoPP::AssignFromHelperClass<CryptoPP::DL_PublicKeyImpl<GP>,CryptoPP::DL_PublicKey<T>>' : assignment operator could not be generated
+          with
+          [
+              GP=CryptoPP::DL_GroupParameters_DSA
+  ,            T=CryptoPP::Integer
+          ]
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\pubkey.h(1320) : see reference to class template instantiation 'CryptoPP::AssignFromHelperClass<CryptoPP::DL_PublicKeyImpl<GP>,CryptoPP::DL_PublicKey<T>>' being compiled
+          with
+          [
+              GP=CryptoPP::DL_GroupParameters_DSA
+  ,            T=CryptoPP::Integer
+          ]
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\pubkey.h(1319) : while compiling class template member function 'void CryptoPP::DL_PublicKeyImpl<GP>::AssignFrom(const CryptoPP::NameValuePairs &)'
+          with
+          [
+              GP=CryptoPP::DL_GroupParameters_DSA
+          ]
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\gfpcrypt.h(461) : see reference to class template instantiation 'CryptoPP::DL_PublicKeyImpl<GP>' being compiled
+          with
+          [
+              GP=CryptoPP::DL_GroupParameters_DSA
+          ]
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\gfpcrypt.h(682) : see reference to class template instantiation 'CryptoPP::DL_PublicKey_GFP<CryptoPP::DL_GroupParameters_DSA>' being compiled
+c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\algparam.h(272): warning C4512: 'CryptoPP::AssignFromHelperClass<CryptoPP::DL_PrivateKeyImpl<GP>,CryptoPP::DL_PrivateKey<CryptoPP::Integer>>' : assignment operator could not be generated
+          with
+          [
+              GP=CryptoPP::DL_GroupParameters_DSA
+          ]
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\pubkey.h(1236) : see reference to class template instantiation 'CryptoPP::AssignFromHelperClass<CryptoPP::DL_PrivateKeyImpl<GP>,CryptoPP::DL_PrivateKey<CryptoPP::Integer>>' being compiled
+          with
+          [
+              GP=CryptoPP::DL_GroupParameters_DSA
+          ]
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\pubkey.h(1235) : while compiling class template member function 'void CryptoPP::DL_PrivateKeyImpl<GP>::AssignFrom(const CryptoPP::NameValuePairs &)'
+          with
+          [
+              GP=CryptoPP::DL_GroupParameters_DSA
+          ]
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\gfpcrypt.h(497) : see reference to class template instantiation 'CryptoPP::DL_PrivateKeyImpl<GP>' being compiled
+          with
+          [
+              GP=CryptoPP::DL_GroupParameters_DSA
+          ]
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\gfpcrypt.h(683) : see reference to class template instantiation 'CryptoPP::DL_PrivateKey_GFP<CryptoPP::DL_GroupParameters_DSA>' being compiled
+c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\secblock.h(200): warning C4127: conditional expression is constant
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\secblock.h(192) : while compiling class template member function 'unsigned char *CryptoPP::AllocatorWithCleanup<CryptoPP::byte,false>::allocate(CryptoPP::AllocatorWithCleanup<CryptoPP::byte,false>::size_type,const void *)'
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\secblock.h(488) : see reference to function template instantiation 'unsigned char *CryptoPP::AllocatorWithCleanup<CryptoPP::byte,false>::allocate(CryptoPP::AllocatorWithCleanup<CryptoPP::byte,false>::size_type,const void *)' being compiled
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\secblock.h(263) : see reference to class template instantiation 'CryptoPP::AllocatorWithCleanup<CryptoPP::byte,false>' being compiled
+c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\secblock.h(223): warning C4127: conditional expression is constant
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\secblock.h(216) : while compiling class template member function 'void CryptoPP::AllocatorWithCleanup<CryptoPP::byte,false>::deallocate(void *,CryptoPP::AllocatorWithCleanup<CryptoPP::byte,false>::size_type)'
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\secblock.h(517) : see reference to function template instantiation 'void CryptoPP::AllocatorWithCleanup<CryptoPP::byte,false>::deallocate(void *,CryptoPP::AllocatorWithCleanup<CryptoPP::byte,false>::size_type)' being compiled
+c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\secblock.h(115): warning C4127: conditional expression is constant
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\secblock.h(111) : while compiling class template member function 'void CryptoPP::AllocatorBase<T>::CheckSize(size_t)'
+          with
+          [
+              T=CryptoPP::byte
+          ]
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\secblock.h(194) : see reference to function template instantiation 'void CryptoPP::AllocatorBase<T>::CheckSize(size_t)' being compiled
+          with
+          [
+              T=CryptoPP::byte
+          ]
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\secblock.h(172) : see reference to class template instantiation 'CryptoPP::AllocatorBase<T>' being compiled
+          with
+          [
+              T=CryptoPP::byte
+          ]
+c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\misc.h(1277): warning C4127: conditional expression is constant
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\secblock.h(220) : see reference to function template instantiation 'void CryptoPP::SecureWipeArray<T>(T *,size_t)' being compiled
+          with
+          [
+              T=CryptoPP::byte
+          ]
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\secblock.h(216) : while compiling class template member function 'void CryptoPP::AllocatorWithCleanup<CryptoPP::byte,false>::deallocate(void *,CryptoPP::AllocatorWithCleanup<CryptoPP::byte,false>::size_type)'
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\secblock.h(517) : see reference to function template instantiation 'void CryptoPP::AllocatorWithCleanup<CryptoPP::byte,false>::deallocate(void *,CryptoPP::AllocatorWithCleanup<CryptoPP::byte,false>::size_type)' being compiled
+c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\misc.h(1279): warning C4127: conditional expression is constant
+c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\misc.h(1281): warning C4127: conditional expression is constant
+c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\algparam.h(272): warning C4512: 'CryptoPP::AssignFromHelperClass<CryptoPP::DL_PrivateKey<CryptoPP::Integer>,CryptoPP::DL_PrivateKey<CryptoPP::Integer>>' : assignment operator could not be generated
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\pubkey.h(1143) : see reference to class template instantiation 'CryptoPP::AssignFromHelperClass<CryptoPP::DL_PrivateKey<CryptoPP::Integer>,CryptoPP::DL_PrivateKey<CryptoPP::Integer>>' being compiled
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\pubkey.h(1141) : while compiling class template member function 'void CryptoPP::DL_PrivateKey<CryptoPP::Integer>::AssignFrom(const CryptoPP::NameValuePairs &)'
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\algparam.h(236) : see reference to function template instantiation 'void CryptoPP::DL_PrivateKey<CryptoPP::Integer>::AssignFrom(const CryptoPP::NameValuePairs &)' being compiled
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\pubkey.h(1208) : see reference to class template instantiation 'CryptoPP::DL_PrivateKey<CryptoPP::Integer>' being compiled
+c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\algparam.h(272): warning C4512: 'CryptoPP::AssignFromHelperClass<CryptoPP::DL_PublicKey<T>,CryptoPP::DL_PublicKey<T>>' : assignment operator could not be generated
+          with
+          [
+              T=CryptoPP::Integer
+          ]
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\pubkey.h(1170) : see reference to class template instantiation 'CryptoPP::AssignFromHelperClass<CryptoPP::DL_PublicKey<T>,CryptoPP::DL_PublicKey<T>>' being compiled
+          with
+          [
+              T=CryptoPP::Integer
+          ]
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\pubkey.h(1163) : while compiling class template member function 'void CryptoPP::DL_PublicKey<T>::AssignFrom(const CryptoPP::NameValuePairs &)'
+          with
+          [
+              T=CryptoPP::Integer
+          ]
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\algparam.h(236) : see reference to function template instantiation 'void CryptoPP::DL_PublicKey<T>::AssignFrom(const CryptoPP::NameValuePairs &)' being compiled
+          with
+          [
+              T=CryptoPP::Integer
+          ]
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\pubkey.h(1101) : while compiling class template member function 'CryptoPP::DL_PublicKey<T>::~DL_PublicKey(void)'
+          with
+          [
+              T=CryptoPP::Integer
+          ]
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xstring(920) : see reference to function template instantiation 'CryptoPP::DL_PublicKey<T>::~DL_PublicKey(void)' being compiled
+          with
+          [
+              T=CryptoPP::Integer
+          ]
+          c:\gamepackages\client\tools\patcher2017\extern\include\cryptopp\pubkey.h(1298) : see reference to class template instantiation 'CryptoPP::DL_PublicKey<T>' being compiled
+          with
+          [
+              T=CryptoPP::Integer
+          ]
+  CPostIt.cpp
+  CRC32.cpp
+  Debug.cpp
+  error.cpp
+  FileBase.cpp
+  FileDir.cpp
+  FileLoader.cpp
+  lzo.cpp
+  MappedFile.cpp
+MappedFile.cpp(37): warning C4800: 'BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+MappedFile.cpp(32): warning C4100: 'mode' : unreferenced formal parameter
+MappedFile.cpp(40): warning C4100: 'mode' : unreferenced formal parameter
+  Base.cpp
+  Poly.cpp
+  Symbol.cpp
+  SymTable.cpp
+  Random.cpp
+  StdAfx.cpp
+  Stl.cpp
+  tea.cpp
+  TempFile.cpp
+  Timer.cpp
+  Generating Code...
+  Compiling...
+  Utils.cpp
+Utils.cpp(340): warning C4127: conditional expression is constant
+  Generating Code...
+c:\gamepackages\client\tools\patcher2017\eterbase\utils.cpp(627): warning C4706: assignment within conditional expression
+StdAfx.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+  eterBase_VC90.vcxproj -> C:\GamePackages\Client\Tools\Patcher2017\EterBase\.\Distribute\eterBase.lib

@@ -1,0 +1,9 @@
+﻿  Assembling...
+   Assembling: C:\GamePackages\Client\Tools\zlib-1.2.3\contrib\masmx86\gvmat32.asm
+  Assembling...
+   Assembling: C:\GamePackages\Client\Tools\zlib-1.2.3\contrib\masmx86\inffas32.asm
+C:\GamePackages\Client\Tools\zlib-1.2.3\contrib\masmx86\inffas32.asm(647): error A2070: invalid instruction operands
+C:\GamePackages\Client\Tools\zlib-1.2.3\contrib\masmx86\inffas32.asm(649): error A2070: invalid instruction operands
+C:\GamePackages\Client\Tools\zlib-1.2.3\contrib\masmx86\inffas32.asm(663): error A2070: invalid instruction operands
+C:\GamePackages\Client\Tools\zlib-1.2.3\contrib\masmx86\inffas32.asm(720): error A2070: invalid instruction operands
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(241,5): error MSB8066: Custom build for '..\..\contrib\masmx86\gvmat32.asm;..\..\contrib\masmx86\inffas32.asm' exited with code 1.

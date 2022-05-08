@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{47ABE4AE-D043-3FCF-849D-C4867638C544}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>torrent-rasterbar</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">torrent-rasterbar.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">torrent-rasterbar</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">torrent-rasterbar.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">torrent-rasterbar</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">torrent-rasterbar.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">torrent-rasterbar</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">torrent-rasterbar.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">torrent-rasterbar</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\include;C:\boost_1_66_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;TORRENT_BUILDING_SHARED;TORRENT_DEBUG;TORRENT_BUILDING_LIBRARY;_FILE_OFFSET_BITS=64;BOOST_EXCEPTION_DISABLE;BOOST_ASIO_ENABLE_CANCELIO;UNICODE;_UNICODE;TORRENT_DISABLE_ENCRYPTION;BOOST_ALL_NO_LIB;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0600;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR="Debug";torrent_rasterbar_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;TORRENT_BUILDING_SHARED;TORRENT_DEBUG;TORRENT_BUILDING_LIBRARY;_FILE_OFFSET_BITS=64;BOOST_EXCEPTION_DISABLE;BOOST_ASIO_ENABLE_CANCELIO;UNICODE;_UNICODE;TORRENT_DISABLE_ENCRYPTION;BOOST_ALL_NO_LIB;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0600;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR=\"Debug\";torrent_rasterbar_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\include;C:\boost_1_66_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\include;C:\boost_1_66_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\boost_1_66_0\stage\lib\libboost_system-vc120-mt-gd-x32-1_66.lib;C:\boost_1_66_0\stage\lib\libboost_system-vc120-mt-gd-x32-1_66.lib;wsock32.lib;ws2_32.lib;Iphlpapi.lib;dbghelp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/GamePackages/Client/Tools/libtorrent-libtorrent_1_1_12/build/Debug/torrent-rasterbar.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/GamePackages/Client/Tools/libtorrent-libtorrent_1_1_12/build/Debug/torrent-rasterbar.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\include;C:\boost_1_66_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TORRENT_BUILDING_SHARED;TORRENT_BUILDING_LIBRARY;_FILE_OFFSET_BITS=64;BOOST_EXCEPTION_DISABLE;BOOST_ASIO_ENABLE_CANCELIO;UNICODE;_UNICODE;TORRENT_DISABLE_ENCRYPTION;TORRENT_DISABLE_GEO_IP;BOOST_ALL_NO_LIB;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0600;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR="Release";torrent_rasterbar_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TORRENT_BUILDING_SHARED;TORRENT_BUILDING_LIBRARY;_FILE_OFFSET_BITS=64;BOOST_EXCEPTION_DISABLE;BOOST_ASIO_ENABLE_CANCELIO;UNICODE;_UNICODE;TORRENT_DISABLE_ENCRYPTION;BOOST_ALL_NO_LIB;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0600;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR=\"Release\";torrent_rasterbar_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\include;C:\boost_1_66_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\include;C:\boost_1_66_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\boost_1_66_0\stage\lib\libboost_system-vc120-mt-x32-1_66.lib;C:\boost_1_66_0\stage\lib\libboost_system-vc120-mt-x32-1_66.lib;wsock32.lib;ws2_32.lib;Iphlpapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/GamePackages/Client/Tools/libtorrent-libtorrent_1_1_12/build/Release/torrent-rasterbar.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/GamePackages/Client/Tools/libtorrent-libtorrent_1_1_12/build/Release/torrent-rasterbar.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\include;C:\boost_1_66_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TORRENT_BUILDING_SHARED;TORRENT_BUILDING_LIBRARY;_FILE_OFFSET_BITS=64;BOOST_EXCEPTION_DISABLE;BOOST_ASIO_ENABLE_CANCELIO;UNICODE;_UNICODE;TORRENT_DISABLE_ENCRYPTION;BOOST_ALL_NO_LIB;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0600;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR="MinSizeRel";torrent_rasterbar_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TORRENT_BUILDING_SHARED;TORRENT_BUILDING_LIBRARY;_FILE_OFFSET_BITS=64;BOOST_EXCEPTION_DISABLE;BOOST_ASIO_ENABLE_CANCELIO;UNICODE;_UNICODE;TORRENT_DISABLE_ENCRYPTION;BOOST_ALL_NO_LIB;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0600;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR=\"MinSizeRel\";torrent_rasterbar_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\include;C:\boost_1_66_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\include;C:\boost_1_66_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\boost_1_66_0\stage\lib\libboost_system-vc120-mt-x32-1_66.lib;C:\boost_1_66_0\stage\lib\libboost_system-vc120-mt-x32-1_66.lib;wsock32.lib;ws2_32.lib;Iphlpapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/GamePackages/Client/Tools/libtorrent-libtorrent_1_1_12/build/MinSizeRel/torrent-rasterbar.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/GamePackages/Client/Tools/libtorrent-libtorrent_1_1_12/build/MinSizeRel/torrent-rasterbar.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\include;C:\boost_1_66_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TORRENT_BUILDING_SHARED;TORRENT_BUILDING_LIBRARY;_FILE_OFFSET_BITS=64;BOOST_EXCEPTION_DISABLE;BOOST_ASIO_ENABLE_CANCELIO;UNICODE;_UNICODE;TORRENT_DISABLE_ENCRYPTION;BOOST_ALL_NO_LIB;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0600;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR="RelWithDebInfo";torrent_rasterbar_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TORRENT_BUILDING_SHARED;TORRENT_BUILDING_LIBRARY;_FILE_OFFSET_BITS=64;BOOST_EXCEPTION_DISABLE;BOOST_ASIO_ENABLE_CANCELIO;UNICODE;_UNICODE;TORRENT_DISABLE_ENCRYPTION;BOOST_ALL_NO_LIB;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0600;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR=\"RelWithDebInfo\";torrent_rasterbar_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\include;C:\boost_1_66_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\include;C:\boost_1_66_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\boost_1_66_0\stage\lib\libboost_system-vc120-mt-x32-1_66.lib;C:\boost_1_66_0\stage\lib\libboost_system-vc120-mt-x32-1_66.lib;wsock32.lib;ws2_32.lib;Iphlpapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/GamePackages/Client/Tools/libtorrent-libtorrent_1_1_12/build/RelWithDebInfo/torrent-rasterbar.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/GamePackages/Client/Tools/libtorrent-libtorrent_1_1_12/build/RelWithDebInfo/torrent-rasterbar.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/GamePackages/Client/Tools/libtorrent-libtorrent_1_1_12/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GamePackages/Client/Tools/libtorrent-libtorrent_1_1_12 -BC:/GamePackages/Client/Tools/libtorrent-libtorrent_1_1_12/build --check-stamp-file C:/GamePackages/Client/Tools/libtorrent-libtorrent_1_1_12/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\LibtorrentRasterbarConfig.cmake.in;C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\build\CMakeFiles\3.23.0-rc2\CMakeCCompiler.cmake;C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\build\CMakeFiles\3.23.0-rc2\CMakeCXXCompiler.cmake;C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\build\CMakeFiles\3.23.0-rc2\CMakeRCCompiler.cmake;C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\build\CMakeFiles\3.23.0-rc2\CMakeSystem.cmake;C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\cmake\Modules\GeneratePkgConfig.cmake;C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\cmake\Modules\LibtorrentMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\BasicConfigVersion-SameMinorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/GamePackages/Client/Tools/libtorrent-libtorrent_1_1_12/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GamePackages/Client/Tools/libtorrent-libtorrent_1_1_12 -BC:/GamePackages/Client/Tools/libtorrent-libtorrent_1_1_12/build --check-stamp-file C:/GamePackages/Client/Tools/libtorrent-libtorrent_1_1_12/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\LibtorrentRasterbarConfig.cmake.in;C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\build\CMakeFiles\3.23.0-rc2\CMakeCCompiler.cmake;C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\build\CMakeFiles\3.23.0-rc2\CMakeCXXCompiler.cmake;C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\build\CMakeFiles\3.23.0-rc2\CMakeRCCompiler.cmake;C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\build\CMakeFiles\3.23.0-rc2\CMakeSystem.cmake;C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\cmake\Modules\GeneratePkgConfig.cmake;C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\cmake\Modules\LibtorrentMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\BasicConfigVersion-SameMinorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/GamePackages/Client/Tools/libtorrent-libtorrent_1_1_12/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GamePackages/Client/Tools/libtorrent-libtorrent_1_1_12 -BC:/GamePackages/Client/Tools/libtorrent-libtorrent_1_1_12/build --check-stamp-file C:/GamePackages/Client/Tools/libtorrent-libtorrent_1_1_12/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\LibtorrentRasterbarConfig.cmake.in;C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\build\CMakeFiles\3.23.0-rc2\CMakeCCompiler.cmake;C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\build\CMakeFiles\3.23.0-rc2\CMakeCXXCompiler.cmake;C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\build\CMakeFiles\3.23.0-rc2\CMakeRCCompiler.cmake;C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\build\CMakeFiles\3.23.0-rc2\CMakeSystem.cmake;C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\cmake\Modules\GeneratePkgConfig.cmake;C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\cmake\Modules\LibtorrentMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\BasicConfigVersion-SameMinorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/GamePackages/Client/Tools/libtorrent-libtorrent_1_1_12/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GamePackages/Client/Tools/libtorrent-libtorrent_1_1_12 -BC:/GamePackages/Client/Tools/libtorrent-libtorrent_1_1_12/build --check-stamp-file C:/GamePackages/Client/Tools/libtorrent-libtorrent_1_1_12/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\LibtorrentRasterbarConfig.cmake.in;C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\build\CMakeFiles\3.23.0-rc2\CMakeCCompiler.cmake;C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\build\CMakeFiles\3.23.0-rc2\CMakeCXXCompiler.cmake;C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\build\CMakeFiles\3.23.0-rc2\CMakeRCCompiler.cmake;C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\build\CMakeFiles\3.23.0-rc2\CMakeSystem.cmake;C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\cmake\Modules\GeneratePkgConfig.cmake;C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\cmake\Modules\LibtorrentMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\BasicConfigVersion-SameMinorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\web_connection_base.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\alert.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\alert_manager.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\announce_entry.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\assert.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\bandwidth_limit.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\bandwidth_manager.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\bandwidth_queue_entry.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\bdecode.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\bitfield.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\block_cache.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\bloom_filter.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\chained_buffer.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\choker.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\close_reason.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\cpuid.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\crc32c.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\create_torrent.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\disk_buffer_holder.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\entry.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\error_code.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\file_storage.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\file_progress.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\lazy_bdecode.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\escape_string.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\string_util.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\file.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\fingerprint.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\gzip.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\hasher.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\hex.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\http_connection.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\http_stream.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\http_parser.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\i2p_stream.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\identify_client.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\ip_filter.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\ip_voter.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\performance_counters.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\peer_class.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\peer_class_set.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\peer_connection.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\bt_peer_connection.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\web_peer_connection.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\http_seed_connection.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\peer_connection_handle.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\instantiate_connection.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\merkle.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\natpmp.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\part_file.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\packet_buffer.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\piece_picker.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\platform_util.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\proxy_base.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\peer_list.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\puff.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\random.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\receive_buffer.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\request_blocks.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\resolve_links.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\resolver.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\rss.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\session.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\session_call.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\session_handle.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\session_impl.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\session_settings.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\proxy_settings.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\session_stats.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\settings_pack.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\socket_io.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\socket_type.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\socks5_stream.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\stat.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\stat_cache.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\storage.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\time.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\timestamp_history.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\torrent.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\torrent_handle.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\torrent_info.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\torrent_peer.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\torrent_peer_allocator.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\torrent_status.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\tracker_manager.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\http_tracker_connection.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\utf8.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\udp_tracker_connection.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\udp_socket.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\upnp.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\utp_socket_manager.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\utp_stream.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\file_pool.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\lsd.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\disk_io_job.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\disk_job_pool.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\disk_buffer_pool.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\disk_io_thread.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\enum_net.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\broadcast_socket.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\magnet_uri.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\parse_url.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\ConvertUTF.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\thread.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\xml_parse.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\version.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\metadata_transfer.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\ut_pex.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\ut_metadata.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\smart_ban.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\lt_trackers.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\dht_storage.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\dos_blocker.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\dht_tracker.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\msg.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\node.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\node_entry.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\refresh.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\rpc_manager.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\find_data.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\put_data.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\node_id.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\routing_table.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\traversal_algorithm.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\item.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\get_peers.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\kademlia\get_item.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\ed25519\src\add_scalar.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\ed25519\src\fe.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\ed25519\src\ge.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\ed25519\src\key_exchange.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\ed25519\src\keypair.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\ed25519\src\sc.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\ed25519\src\seed.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\ed25519\src\sha512.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\ed25519\src\sign.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\ed25519\src\verify.cpp" />
+    <ClCompile Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\src\sha1.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\GamePackages\Client\Tools\libtorrent-libtorrent_1_1_12\build\ZERO_CHECK.vcxproj">
+      <Project>{FEA76CA8-CD3B-3DE7-9E20-18139BBF1CB1}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

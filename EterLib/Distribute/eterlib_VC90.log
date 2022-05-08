@@ -1,0 +1,83 @@
+﻿  StdAfx.cpp
+  AttributeData.cpp
+  AttributeInstance.cpp
+  BlockTexture.cpp
+  Camera.cpp
+  CollisionData.cpp
+  ColorTransitionHelper.cpp
+  CullingManager.cpp
+  Decal.cpp
+  DibBar.cpp
+  EnvironmentMap.cpp
+  FileLoaderThread.cpp
+  GrpBase.cpp
+  GrpCollisionObject.cpp
+  GrpColor.cpp
+  GrpColorInstance.cpp
+  GrpD3DXBuffer.cpp
+  GrpDetector.cpp
+  GrpDevice.cpp
+  GrpDIB.cpp
+  GrpExpandedImageInstance.cpp
+  Generating Code...
+  Compiling...
+  GrpFontTexture.cpp
+  GrpImage.cpp
+  GrpImageInstance.cpp
+  GrpImageTexture.cpp
+  GrpIndexBuffer.cpp
+  GrpLightManager.cpp
+  GrpMarkInstance.cpp
+  GrpMath.cpp
+  GrpObjectInstance.cpp
+  GrpPixelShader.cpp
+  GrpRatioInstance.cpp
+  GrpScreen.cpp
+  GrpShadowTexture.cpp
+  GrpSubImage.cpp
+  GrpText.cpp
+  GrpTextInstance.cpp
+  GrpTexture.cpp
+  GrpVertexBuffer.cpp
+  GrpVertexBufferDynamic.cpp
+  GrpVertexBufferStatic.cpp
+  Generating Code...
+  Compiling...
+  GrpVertexShader.cpp
+  IME.cpp
+IME.cpp(309): warning C4996: 'GetVersionExA': was declared deprecated
+          C:\Program Files (x86)\Windows Kits\8.1\Include\um\sysinfoapi.h(433) : see declaration of 'GetVersionExA'
+IME.cpp(1182): warning C4996: 'GetVersionExA': was declared deprecated
+          C:\Program Files (x86)\Windows Kits\8.1\Include\um\sysinfoapi.h(433) : see declaration of 'GetVersionExA'
+  Input.cpp
+  JpegFile.cpp
+  LensFlare.cpp
+  lineintersect_utils.cpp
+  MSApplication.cpp
+  MSWindow.cpp
+  Mutex.cpp
+  NetAddress.cpp
+  NetDatagram.cpp
+  NetDatagramReceiver.cpp
+  NetDatagramSender.cpp
+  NetDevice.cpp
+  NetPacketHeaderMap.cpp
+  NetStream.cpp
+  parser.cpp
+  PathStack.cpp
+  ReferenceObject.cpp
+  Resource.cpp
+  Generating Code...
+  Compiling...
+  ResourceManager.cpp
+  ScreenFilter.cpp
+  SkyBox.cpp
+  StateManager.cpp
+  TargaResource.cpp
+  TextBar.cpp
+  TextFileLoader.cpp
+  TextTag.cpp
+  Thread.cpp
+  Util.cpp
+  Generating Code...
+  eterlib_VC90.vcxproj -> C:\GamePackages\Client\Tools\Patcher2017\EterLib\.\Distribute\eterlib.lib

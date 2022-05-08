@@ -1,0 +1,217 @@
+﻿  Performing Custom Build Tools
+  Building and assembling rdrand.asm
+   Assembling: C:\Users\ademd\Desktop\martysama0134-s3llsrcallv4.9-d082ead69d94\Srcs\Extern\cryptopp\rdrand.asm
+  pch.cpp
+  cryptlib.cpp
+  cpu.cpp
+  integer.cpp
+  3way.cpp
+  adler32.cpp
+  algebra.cpp
+  algparam.cpp
+  arc4.cpp
+  aria.cpp
+c:\users\ademd\desktop\martysama0134-s3llsrcallv4.9-d082ead69d94\srcs\extern\cryptopp\aria.cpp(151): warning C4456: declaration of 'block' hides previous local declaration
+  c:\users\ademd\desktop\martysama0134-s3llsrcallv4.9-d082ead69d94\srcs\extern\cryptopp\aria.cpp(141): note: see declaration of 'block'
+c:\users\ademd\desktop\martysama0134-s3llsrcallv4.9-d082ead69d94\srcs\extern\cryptopp\aria.cpp(156): warning C4456: declaration of 'block' hides previous local declaration
+  c:\users\ademd\desktop\martysama0134-s3llsrcallv4.9-d082ead69d94\srcs\extern\cryptopp\aria.cpp(141): note: see declaration of 'block'
+  aria-simd.cpp
+  ariatab.cpp
+  asn.cpp
+  authenc.cpp
+  base32.cpp
+  base64.cpp
+  basecode.cpp
+  bfinit.cpp
+  blake2.cpp
+  blake2-simd.cpp
+  blowfish.cpp
+  Generating Code...
+  Compiling...
+  blumshub.cpp
+  camellia.cpp
+  cast.cpp
+  casts.cpp
+  cbcmac.cpp
+  ccm.cpp
+  chacha.cpp
+  channels.cpp
+  cmac.cpp
+  crc.cpp
+  crc-simd.cpp
+  default.cpp
+  des.cpp
+  dessp.cpp
+  dh.cpp
+  dh2.cpp
+  dsa.cpp
+  eax.cpp
+  ec2n.cpp
+  ecp.cpp
+  Generating Code...
+  Compiling...
+  elgamal.cpp
+  emsa2.cpp
+  esign.cpp
+  files.cpp
+  filters.cpp
+  fips140.cpp
+  fipstest.cpp
+  gcm.cpp
+  gcm-simd.cpp
+  gf256.cpp
+  gf2_32.cpp
+  gf2n.cpp
+  gfpcrypt.cpp
+  gost.cpp
+  gzip.cpp
+  hex.cpp
+  hmac.cpp
+  hrtimer.cpp
+  ida.cpp
+  idea.cpp
+  Generating Code...
+  Compiling...
+  kalyna.cpp
+  kalynatab.cpp
+  keccak.cpp
+  luc.cpp
+  mars.cpp
+  marss.cpp
+  md2.cpp
+  md4.cpp
+  md5.cpp
+  misc.cpp
+  modes.cpp
+  mqueue.cpp
+  mqv.cpp
+  nbtheory.cpp
+  network.cpp
+  oaep.cpp
+  osrng.cpp
+  padlkrng.cpp
+  panama.cpp
+  pkcspad.cpp
+  Generating Code...
+  Compiling...
+  poly1305.cpp
+  polynomi.cpp
+  pssr.cpp
+  pubkey.cpp
+  queue.cpp
+  rabin.cpp
+  randpool.cpp
+  rc2.cpp
+  rc5.cpp
+  rc6.cpp
+  rdrand.cpp
+  rdtables.cpp
+  rijndael.cpp
+  rijndael-simd.cpp
+  ripemd.cpp
+  rng.cpp
+  rsa.cpp
+  rw.cpp
+  safer.cpp
+  salsa.cpp
+  Generating Code...
+  Compiling...
+  scrypt.cpp
+  seal.cpp
+  seed.cpp
+  serpent.cpp
+  sha.cpp
+  sha-simd.cpp
+  sha3.cpp
+  shacal2.cpp
+  shacal2-simd.cpp
+  shark.cpp
+  sharkbox.cpp
+  simon.cpp
+  simon-simd.cpp
+  simple.cpp
+  skipjack.cpp
+  sm3.cpp
+  sm4.cpp
+  socketft.cpp
+  sosemanuk.cpp
+  speck.cpp
+  Generating Code...
+  Compiling...
+  speck-simd.cpp
+  square.cpp
+  squaretb.cpp
+  sse-simd.cpp
+  strciphr.cpp
+  tea.cpp
+  tftables.cpp
+  threefish.cpp
+  tiger.cpp
+  tigertab.cpp
+  trdlocal.cpp
+  ttmac.cpp
+  tweetnacl.cpp
+  twofish.cpp
+  vmac.cpp
+  wait.cpp
+  wake.cpp
+  whrlpool.cpp
+  winpipes.cpp
+  xtr.cpp
+  Generating Code...
+  Compiling...
+  xtrcrypt.cpp
+  zdeflate.cpp
+  zinflate.cpp
+  zlib.cpp
+  Generating Code...
+  dll.cpp
+  iterhash.cpp
+  Generating Code...
+trdlocal.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+strciphr.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+skipjack.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+simple.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+sha.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+rw.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+rsa.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+rijndael.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+rdtables.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+randpool.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+queue.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+pubkey.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+polynomi.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+osrng.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+oaep.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+nbtheory.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+mqueue.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+modes.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+misc.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+hmac.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+hex.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+gfpcrypt.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+gf2n.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+gcm.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+fipstest.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+fips140.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+filters.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+files.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+emsa2.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+ecp.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+ec2n.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+dsa.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+dh.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+dessp.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+cmac.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+channels.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+ccm.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+cbcmac.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+basecode.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+authenc.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+asn.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+algparam.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+algebra.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+integer.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+cpu.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+cryptlib.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+  cryptlib.vcxproj -> C:\Users\ademd\Desktop\martysama0134-s3llsrcallv4.9-d082ead69d94\Srcs\Extern\cryptopp\\..\lib\cryptlib-DLL-Import Debug.lib
