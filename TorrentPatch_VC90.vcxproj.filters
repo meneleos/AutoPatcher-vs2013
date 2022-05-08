@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="App">
+      <UniqueIdentifier>{872fba2e-9edd-416d-8d1a-8715251b4330}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{d947af43-9dae-48b8-8fe7-e4a7ecf43057}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{6e483631-f7f8-440c-82d1-842e64dfe6b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SFX">
+      <UniqueIdentifier>{919e86d0-3a08-436d-b8be-785d643262f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Configurations &amp; Status">
+      <UniqueIdentifier>{3caf8bf9-385e-4715-97c8-c4897195dcb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Skin">
+      <UniqueIdentifier>{54125dcf-e6f9-44e4-b807-4fe79be79625}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Patch">
+      <UniqueIdentifier>{8929fdbf-8bd2-4f85-9945-c8dfe7ab52f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main UI">
+      <UniqueIdentifier>{9d61784c-3447-4c8f-979b-72ccee373e1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XTrap">
+      <UniqueIdentifier>{bade43d0-7f89-4c64-9781-3d718d755fa7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries">
+      <UniqueIdentifier>{0384bb5c-3c8e-445c-8457-0039ecda25a3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Metin2TorrentConsole.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="TorrentPatchApp.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="CConfig.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="CCrcTable.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="CLocaleManager.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="CPostIt.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="CVersionFile.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="StringFromFile.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="StringFromHttp.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="CMiniUnZIP.cpp">
+      <Filter>SFX</Filter>
+    </ClCompile>
+    <ClCompile Include="TorrentPatchTaskBarIcon.cpp">
+      <Filter>Configurations &amp; Status</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinButton.cpp">
+      <Filter>Skin</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinGauge.cpp">
+      <Filter>Skin</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinText.cpp">
+      <Filter>Skin</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinWindow.cpp">
+      <Filter>Skin</Filter>
+    </ClCompile>
+    <ClCompile Include="TorrentSkin.cpp">
+      <Filter>Skin</Filter>
+    </ClCompile>
+    <ClCompile Include="WebBrowserPanel.cpp">
+      <Filter>Skin</Filter>
+    </ClCompile>
+    <ClCompile Include="CrcPatcher.cpp">
+      <Filter>Patch</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchThread.cpp">
+      <Filter>Patch</Filter>
+    </ClCompile>
+    <ClCompile Include="TorrentPatch.cpp">
+      <Filter>Patch</Filter>
+    </ClCompile>
+    <ClCompile Include="TorrentPatchEvent.cpp">
+      <Filter>Main UI</Filter>
+    </ClCompile>
+    <ClCompile Include="TorrentPatchFrame.cpp">
+      <Filter>Main UI</Filter>
+    </ClCompile>
+    <ClCompile Include="TorrentPatchPanel.cpp">
+      <Filter>Main UI</Filter>
+    </ClCompile>
+    <ClCompile Include="WinAdmin.cpp">
+      <Filter>Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="Status.cpp">
+      <Filter>Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="CTextFile.cpp">
+      <Filter>Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandLinecpp.cpp">
+      <Filter>Libraries</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TorrentPatchApp.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="CConfig.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="CCrcTable.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="CLocaleManager.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="CPostIt.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="CVersionFile.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="StringFromFile.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="StringFromHttp.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="CMiniUnZIP.h">
+      <Filter>SFX</Filter>
+    </ClInclude>
+    <ClInclude Include="ZIP.h">
+      <Filter>SFX</Filter>
+    </ClInclude>
+    <ClInclude Include="LauncherDef.h">
+      <Filter>Configurations &amp; Status</Filter>
+    </ClInclude>
+    <ClInclude Include="PatchConfig.h">
+      <Filter>Configurations &amp; Status</Filter>
+    </ClInclude>
+    <ClInclude Include="PatchInfo.h">
+      <Filter>Configurations &amp; Status</Filter>
+    </ClInclude>
+    <ClInclude Include="PatchStatus.h">
+      <Filter>Configurations &amp; Status</Filter>
+    </ClInclude>
+    <ClInclude Include="TorrentPatchTaskBarIcon.h">
+      <Filter>Configurations &amp; Status</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinButton.h">
+      <Filter>Skin</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinGauge.h">
+      <Filter>Skin</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinText.h">
+      <Filter>Skin</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinWindow.h">
+      <Filter>Skin</Filter>
+    </ClInclude>
+    <ClInclude Include="TorrentSkin.h">
+      <Filter>Skin</Filter>
+    </ClInclude>
+    <ClInclude Include="WebBrowserPanel.h">
+      <Filter>Skin</Filter>
+    </ClInclude>
+    <ClInclude Include="CrcPatcher.h">
+      <Filter>Patch</Filter>
+    </ClInclude>
+    <ClInclude Include="PatchThread.h">
+      <Filter>Patch</Filter>
+    </ClInclude>
+    <ClInclude Include="TorrentPatch.h">
+      <Filter>Patch</Filter>
+    </ClInclude>
+    <ClInclude Include="TorrentPatchEvent.h">
+      <Filter>Main UI</Filter>
+    </ClInclude>
+    <ClInclude Include="TorrentPatchFrame.h">
+      <Filter>Main UI</Filter>
+    </ClInclude>
+    <ClInclude Include="TorrentPatchPanel.h">
+      <Filter>Main UI</Filter>
+    </ClInclude>
+    <ClInclude Include="XTrap\include\Xtrap_L_Interface.h">
+      <Filter>XTrap</Filter>
+    </ClInclude>
+    <ClInclude Include="TSimpleString.h" />
+    <ClInclude Include="TStringBuffer.h" />
+    <ClInclude Include="Environment.h" />
+    <ClInclude Include="StringMa.h" />
+    <ClInclude Include="WinAdmin.h">
+      <Filter>Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="Status.h">
+      <Filter>Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="CTextFile.h">
+      <Filter>Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandLine.h">
+      <Filter>Libraries</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="_COREST.INI">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="Manual.txt">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="TorrentPatch.ico">
+      <Filter>Resource</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Metin2TorrentConsole.rc">
+      <Filter>Resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="Metin2TorrentConsole.h">
+      <Filter>App</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="Metin2TorrentConsoleLink.h">
+      <Filter>App</Filter>
+    </CustomBuildStep>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="MTd|Win32">
+      <Configuration>MTd</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MT|Win32">
+      <Configuration>MT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>TorrentPatch</ProjectName>
+    <ProjectGuid>{53C25DCE-152C-4D3E-9E6A-F52909794F76}</ProjectGuid>
+    <RootNamespace>Metin2TorrentConsole</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MT|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MTd|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='MT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='MTd|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MTd|Win32'">./TorrentPatchSfxBuilder\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MTd|Win32'">./obj/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MTd|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MT|Win32'">./TorrentPatchSfxBuilder\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MT|Win32'">./obj/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MT|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MT|Win32'">false</GenerateManifest>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='MT|Win32'">false</EmbedManifest>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='MTd|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='MTd|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='MTd|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='MT|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='MT|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='MT|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MT|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MTd|Win32'">
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MTd|Win32'">
+    <PreBuildEvent>
+      <Command>c:/python27/python.exe version.py</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../;../../../../extern/include;XTrap\include;../../../../extern/include/Patcher;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Metin2TorrentConsole.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <ShowProgress>NotSet</ShowProgress>
+      <OutputFile>$(OutDir)$(ProjectName)_x86_$(Configuration)_VC90.exe</OutputFile>
+      <AdditionalLibraryDirectories>../../../../extern/lib;XTrap\lib;../../../../extern/lib/patcher;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>false</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <SupportUnloadOfDelayLoadedDLL>false</SupportUnloadOfDelayLoadedDLL>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>TorrentPatch.exe.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MT|Win32'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Command>..\..\extern\bin\python26\python.exe version.py
+</Command>
+    </CustomBuildStep>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>../extern/include;XTrap\include;../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>Metin2TorrentConsole.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <ShowProgress>NotSet</ShowProgress>
+      <OutputFile>$(OutDir)$(ProjectName)_x86_$(Configuration)_VC90.exe</OutputFile>
+      <AdditionalLibraryDirectories>../extern/lib;XTrap\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>false</GenerateMapFile>
+      <MapExports>true</MapExports>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>TorrentPatch.exe.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CommandLinecpp.cpp" />
+    <ClCompile Include="Metin2TorrentConsole.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MTd|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MT|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Status.cpp" />
+    <ClCompile Include="CTextFile.cpp" />
+    <ClCompile Include="TorrentPatchApp.cpp" />
+    <ClCompile Include="CConfig.cpp" />
+    <ClCompile Include="CCrcTable.cpp" />
+    <ClCompile Include="CLocaleManager.cpp" />
+    <ClCompile Include="CPostIt.cpp" />
+    <ClCompile Include="CVersionFile.cpp" />
+    <ClCompile Include="Helper.cpp" />
+    <ClCompile Include="StringFromFile.cpp" />
+    <ClCompile Include="StringFromHttp.cpp" />
+    <ClCompile Include="CMiniUnZIP.cpp" />
+    <ClCompile Include="TorrentPatchTaskBarIcon.cpp" />
+    <ClCompile Include="SkinButton.cpp" />
+    <ClCompile Include="SkinGauge.cpp" />
+    <ClCompile Include="SkinText.cpp" />
+    <ClCompile Include="SkinWindow.cpp" />
+    <ClCompile Include="TorrentSkin.cpp" />
+    <ClCompile Include="WebBrowserPanel.cpp" />
+    <ClCompile Include="CrcPatcher.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MTd|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="PatchThread.cpp" />
+    <ClCompile Include="TorrentPatch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MTd|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TorrentPatchEvent.cpp" />
+    <ClCompile Include="TorrentPatchFrame.cpp" />
+    <ClCompile Include="TorrentPatchPanel.cpp" />
+    <ClCompile Include="WinAdmin.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="Metin2TorrentConsole.h" />
+    <CustomBuildStep Include="Metin2TorrentConsoleLink.h" />
+    <ClInclude Include="CommandLine.h" />
+    <ClInclude Include="Environment.h" />
+    <ClInclude Include="Status.h" />
+    <ClInclude Include="StringMa.h" />
+    <ClInclude Include="CTextFile.h" />
+    <ClInclude Include="TorrentPatchApp.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="CConfig.h" />
+    <ClInclude Include="CCrcTable.h" />
+    <ClInclude Include="CLocaleManager.h" />
+    <ClInclude Include="CPostIt.h" />
+    <ClInclude Include="CVersionFile.h" />
+    <ClInclude Include="Helper.h" />
+    <ClInclude Include="StringFromFile.h" />
+    <ClInclude Include="StringFromHttp.h" />
+    <ClInclude Include="CMiniUnZIP.h" />
+    <ClInclude Include="TSimpleString.h" />
+    <ClInclude Include="TStringBuffer.h" />
+    <ClInclude Include="WinAdmin.h" />
+    <ClInclude Include="ZIP.h" />
+    <ClInclude Include="LauncherDef.h" />
+    <ClInclude Include="PatchConfig.h" />
+    <ClInclude Include="PatchInfo.h" />
+    <ClInclude Include="PatchStatus.h" />
+    <ClInclude Include="TorrentPatchTaskBarIcon.h" />
+    <ClInclude Include="SkinButton.h" />
+    <ClInclude Include="SkinGauge.h" />
+    <ClInclude Include="SkinText.h" />
+    <ClInclude Include="SkinWindow.h" />
+    <ClInclude Include="TorrentSkin.h" />
+    <ClInclude Include="WebBrowserPanel.h" />
+    <ClInclude Include="CrcPatcher.h" />
+    <ClInclude Include="PatchThread.h" />
+    <ClInclude Include="TorrentPatch.h" />
+    <ClInclude Include="TorrentPatchEvent.h" />
+    <ClInclude Include="TorrentPatchFrame.h" />
+    <ClInclude Include="TorrentPatchPanel.h" />
+    <ClInclude Include="XTrap\include\Xtrap_L_Interface.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="_COREST.INI" />
+    <None Include="Manual.txt" />
+    <None Include="TorrentPatch.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Metin2TorrentConsole.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EterBase\eterBase_VC90.vcxproj">
+      <Project>{678c47dc-b3ef-460e-a932-56f3208fc65e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\EterLib\eterlib_VC90.vcxproj">
+      <Project>{887f89df-a1a2-47df-a869-f3fc84704e3e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\EterPack\EterPack_VC90.vcxproj">
+      <Project>{4950ba04-3877-4f66-bca0-60e00de3770b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
