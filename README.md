@@ -2,8 +2,8 @@
 Auto-patcher upgrade to 2013
 
 -- fixes --
-*subdirectory bug fixed (like "lib/xml/parser")
-added secondary server (if it cannot reach the main server, it connects to the second)
+*subdirectory bug fixed (like "lib/xml/parser") </br>
+added secondary server (if it cannot reach the main server, it connects to the second)</br>
 
 -- Libraries -- </br>
 
