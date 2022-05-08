@@ -1,6 +1,10 @@
 # AutoPatcher-vs2013
 Auto-patcher upgrade to 2013
 
+-- fixes --
+*subdirectory bug fixed (like "lib/xml/parser")
+added secondary server (if it cannot reach the main server, it connects to the second)
+
 -- Libraries -- </br>
 
 Boost 1.66.0 ( ```<1.34> upgrade, concerted```) </br>
