@@ -115,8 +115,8 @@ private:
 	virtual bool	_OnNoticeEULA(const std::wstring& url, const wxSize& size);
 
 public:
-	static bool	sGetCRC32(MA_LPCTSTR tszFileName, EL_UINT* puCRC32);
-	static bool	sGetSelfCRC32(EL_UINT* puCRC32);
+	static bool	sGetCRC32(MA_LPCTSTR tszFileName, DWORD* puCRC32);
+	static bool	sGetSelfCRC32(DWORD* puCRC32);
 
 protected:
 	EL_TorrentPatchPanel*		m_panelPtr;

@@ -27,8 +27,6 @@
 #include <EterPack/EterPack.h>
 #include <EterPack/EterPackManager.h>
 
-//#include <Reducio\Reducio.h>
-
 #include <Mantle/MA_Path.h>
 #include <Mantle/MA_String.h>
 #include <Mantle/MA_CCommandLine.h>
@@ -43,13 +41,7 @@
 #include "StringMa.h"
 
 extern DWORD g_cmdFlags;
-//#ifdef _DEBUG
-//	#pragma comment(lib, "reducio_d.lib")
-//#else
-//	#pragma comment(lib, "reducio.lib")
-//#endif
 
-//using namespace Reducio;
 bool bFirstCall = false;
 
 #include <windows.h>
@@ -295,7 +287,7 @@ void* EL_PatchThread::Entry()
 	{
 #ifdef ENABLE_GUARD_CHECKER
 		m_kServerGuardChecker.Initialize();
-		m_kServerGuardChecker.AddChannel(1, "localhost", 12002);
+		m_kServerGuardChecker.AddChannel(1, "SERVER_IP", 12002);
 #endif
 
 		// 패치를 시작하기 전에 서버에서 지정해 준 지워야 할 파일들을 지움.
@@ -307,13 +299,13 @@ void* EL_PatchThread::Entry()
 	}
 
 	if( bRet ) {
-// #ifdef UPDATE_PATCHER_SELF
-		// if (!__IsNewPatcher() && __LaunchNewPatcher())
-		// {
-			// return false; // 패치가 업데이트되면 종료해야함
-		// }
-		// else
-// #endif
+ #ifdef UPDATE_PATCHER_SELF
+		 if (!__IsNewPatcher() && __LaunchNewPatcher())
+		 {
+			 return false; // 패치가 업데이트되면 종료해야함
+		 }
+		 else
+ #endif
 		{
 			//TODO : 여기서 처리한다
 			{
@@ -766,7 +758,7 @@ bool EL_PatchThread::__BackToMainPatcher()
 		return EL_FALSE;
 	}
 
-	EL_UINT selfCRC32;
+	DWORD selfCRC32;
 
 	if (!sGetSelfCRC32(&selfCRC32))
 	{
@@ -856,7 +848,7 @@ bool EL_PatchThread::__LaunchNewPatcher()
 		return EL_FALSE;
 	}
 
-	EL_UINT selfCRC32;
+	DWORD selfCRC32;
 
 	if( !sGetSelfCRC32(&selfCRC32) ) {
 		_Notify(MA_T("CUR_PATCHER_SELF_OPEN_ERROR"));
@@ -870,7 +862,7 @@ bool EL_PatchThread::__LaunchNewPatcher()
 		return EL_FALSE;
 	}
 
-	EL_UINT newPatcherCRC32;
+	DWORD newPatcherCRC32;
 
 	if( !sGetCRC32(m_stPatchConfig.newPatcherPath.c_str(), &newPatcherCRC32) ) {
 		// 파일이 없으면 그냥 종료해도 됨
@@ -923,11 +915,16 @@ bool EL_PatchThread::__DownloadNewPatcherFromWeb(bool bToMainPatcher)
 
 	MA_BOOL bIsNewPatcher = bToMainPatcher;
 
-	if (m_stPatchConfig.newPatcherURL.empty())
-		return EL_FALSE;
+	if (m_stPatchConfig.newPatcherURL.empty()) {
 
-	if (m_stPatchConfig.newPatcherPath.empty())
+		//wxMessageBox(L"newPatcherURL empty", EL_LTEXT("NOTICE"));
+		return EL_FALSE;
+	}
+
+	if (m_stPatchConfig.newPatcherPath.empty()) {
+		//wxMessageBox(L"newPatcherPath empty", EL_LTEXT("NOTICE"));
 		return false;
+	}
 
 	//MA_LPCTSTR	ptszSelfModulePath = bToMainPatcher ? config.newPatcherPath.c_str() : config.curPatcherPath.c_str();
 	MA_LPCTSTR	ptszNewModulePath  = bToMainPatcher ? m_stPatchConfig.curPatcherPath.c_str() : m_stPatchConfig.newPatcherPath.c_str();
@@ -937,8 +934,8 @@ bool EL_PatchThread::__DownloadNewPatcherFromWeb(bool bToMainPatcher)
 	if (EL_KillProcess(tszNewModuleFileName))
 		::Sleep(1000);
 
-	EL_UINT dwSelfCRC32 = 0;
-	EL_UINT dwNewPatcherCRC32 = 0;
+	DWORD dwSelfCRC32 = 0;
+	DWORD dwNewPatcherCRC32 = 0;
 
 	if (!sGetSelfCRC32(&dwSelfCRC32))
 		return EL_FALSE;
@@ -958,7 +955,7 @@ bool EL_PatchThread::__DownloadNewPatcherFromWeb(bool bToMainPatcher)
 	return cCRCPatcher._DownloadFileFromHttp(m_stPatchConfig.newPatcherURL.c_str(), ptszNewModulePath, tszNewModuleFileName, NULL );
 }
 
-bool EL_PatchThread::sGetCRC32(MA_LPCTSTR fileName, EL_UINT* puCRC32)
+bool EL_PatchThread::sGetCRC32(MA_LPCTSTR fileName, DWORD* puCRC32)
 {
 	CMappedFile mappedFile;
 	if (!mappedFile.Open(fileName, CFileBase::FILEMODE_READ))
@@ -969,7 +966,7 @@ bool EL_PatchThread::sGetCRC32(MA_LPCTSTR fileName, EL_UINT* puCRC32)
 	return EL_TRUE;
 }
 
-bool EL_PatchThread::sGetSelfCRC32(EL_UINT* puCRC32)
+bool EL_PatchThread::sGetSelfCRC32(DWORD* puCRC32)
 {
 	EL_TCHAR tszSelfModulePath[EL_MAX_PATH];
 
@@ -1208,18 +1205,7 @@ bool EL_PatchThread::__ParsePatchInfoXmlData(const std::string& xmlData, EL_Patc
 	const char* newPatcherCRC32 = (const char*) pkFirstElement->Attribute("new_patcher_crc32");
 
 	if (newPatcherCRC32) {
-		retConfig->newPatcherCRC32 = StringToUInt(newPatcherCRC32, strlen(newPatcherCRC32));
-		unsigned char* newPatcherCRC3 = (unsigned char*) pkFirstElement->Attribute("new_patcher_crc32");
-		if (newPatcherCRC3)
-		{
-			MA_CE2W wcurPatcherPath(newPatcherCRC3);
-			std::wstring anan = wcurPatcherPath;
-			std::string s( anan.begin(), anan.end() );
-
-			EL_UINT dwNewPatcherCRC32;
-			sscanf(s.c_str(), "%8x", &dwNewPatcherCRC32);
-			retConfig->newPatcherCRC32 = dwNewPatcherCRC32;
-		}
+		retConfig->newPatcherCRC32 = HexStringToUInt(newPatcherCRC32, strlen(newPatcherCRC32));
 	}
 
 	// 패처 경로

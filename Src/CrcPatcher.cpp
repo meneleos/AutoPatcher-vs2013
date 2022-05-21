@@ -152,7 +152,7 @@ MA_BOOL EL_CrcPatcher::Patch(const EL_CCrcTable& rcTable, const std::wstring& ba
 			{
 				if (bAdminMod)
 				{
-					EL_UINT crcver = 0;
+					DWORD crcver = 0;
 					if (EL_PatchThread::sGetCRC32(path.c_str(), &crcver) == EL_TRUE)
 					{
 						wcstombs(filePath, patha.c_str(), MAX_PATH );
@@ -169,7 +169,7 @@ MA_BOOL EL_CrcPatcher::Patch(const EL_CCrcTable& rcTable, const std::wstring& ba
 					}
 					else {
 						MA_SAFE_CLOSEHANDLE(hFile);
-						EL_UINT dwLocalCRC32 = 0;
+						DWORD dwLocalCRC32 = 0;
 						if (EL_PatchThread::sGetCRC32(path.c_str(), &dwLocalCRC32) == EL_TRUE) {
 							if(dwLocalCRC32 == info.CRC32) {
 								if (bAdminMod == EL_FALSE)
@@ -586,22 +586,12 @@ bool EL_CrcPatcher::_DownloadFileFromHttp(MA_LPCWSTR wszURL, MA_LPCWSTR wszLocal
 				_tmkdir(outFolder.c_str());
 			}
 
-			//if (CreateDirectory(outFolder.c_str(), NULL) ||
-			//	ERROR_ALREADY_EXISTS == GetLastError())
-			//{
-			//	// CopyFile(...)
-			//}
-			//else
-			//{
 			//	if (pcStatus)
 			//		pcStatus->AddNRf(CStatus::EA_STATUS_ERROR, _T("Dizin olusturulamadi - %s"), fileName.c_str());
-
-			//	return false;
-			//}
 		}
 		parts.clear();
-
 	}
+
 #ifdef _MSC_VER
 	if (parts.size()) {
 		if (_taccess(parts[0].c_str(), 02) != 0)

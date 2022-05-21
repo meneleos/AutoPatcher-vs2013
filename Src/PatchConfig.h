@@ -69,7 +69,7 @@ struct EL_PatchConfig
 	std::wstring newPatcherURL;
 	std::wstring newPatcherPath;
 	std::wstring curPatcherPath;
-	EL_UINT	newPatcherCRC32;
+	DWORD	newPatcherCRC32;
 	std::wstring runPath;
 
 	// EULA(End-User License Agreement)

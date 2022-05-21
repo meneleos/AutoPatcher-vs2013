@@ -691,7 +691,22 @@ static MA_XINT MA_StringToInt32W(MA_PCWSTR IN tszString, MA_SIZE IN sizeString)
 	return i;
 }
 
-static EL_UINT StringToUInt(std::string data, MA_SIZE len)
+static DWORD HexStringToUInt(std::string data, MA_SIZE len)
+{
+	DWORD value = 0;
+	std::istringstream iss(data);
+	iss >> std::hex >> value;
+
+	//unsigned int x;
+	//DWORD x = (DWORD)strtol(data.c_str(), NULL, 16);
+
+	//std::stringstream ss;
+	//ss << std::hex << data;
+	//ss >> x;
+	return value;
+}
+
+static int StringToUInt(std::string data, MA_SIZE len)
 {
 	//unsigned int x;
 	unsigned int x = (int)strtol(data.c_str(), NULL, 16);
@@ -857,16 +872,11 @@ static bool PathSplit(MA_PCWSTR src, MA_PWSTR branch, MA_SIZE branchLen, MA_PWST
 	while (n = wcschr(p, '\\'))
 		p = n + 1;
 
-	//wxMessageBox(p, TAPP_NAME, wxOK | wxICON_INFORMATION);
-
 	if (branch)
 		wcsncpy(branch, src, p - src);
 
-	//wxMessageBox(branch, TAPP_NAME, wxOK | wxICON_INFORMATION);
 	if (leaf)
 		wcscpy(leaf, p);
-
-	//wxMessageBox(leaf, TAPP_NAME, wxOK | wxICON_INFORMATION);
 
 	return true;
 }
